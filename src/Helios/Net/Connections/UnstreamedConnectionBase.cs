@@ -98,7 +98,7 @@ namespace Helios.Net.Connections
         public abstract int Available { get; }
         public int MessagesInSendQueue { get { return SendQueue.Count; } }
         public abstract Task<bool> OpenAsync();
-        public abstract void Configure(IConnectionConfig config);
+        public abstract void Configure(IHeliosConfig config);
 
         public abstract void Open();
         public void BeginReceive()
